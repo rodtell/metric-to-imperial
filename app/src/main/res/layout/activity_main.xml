@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text_view_titulo_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="@string/conversor_metrico_para_imperial"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_converter_quilogramas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/converter"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_kilo"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_kilo" />
+
+    <Button
+        android:id="@+id/button_converter_metros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/converter_metros"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_metros"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_metros" />
+
+    <EditText
+        android:id="@+id/edit_text_kilo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="136dp"
+        android:hint="@string/digite_os_quilogramas"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_metros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="24dp"
+        android:hint="@string/digite_a_metragem"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_kilo"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_kilo" />
+
+    <EditText
+        android:id="@+id/edit_text_quilometros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="39dp"
+        android:hint="@string/digite_a_quilometragem"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_converter_metros" />
+
+    <Button
+        android:id="@+id/button_converter_quilometragem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/converter_quilometragem"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_quilometros"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_quilometros" />
+
+    <EditText
+        android:id="@+id/edit_text_velocidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="29dp"
+        android:hint="@string/digite_a_velocidade_km_h"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_converter_quilometragem" />
+
+    <Button
+        android:id="@+id/button_converter_velocidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/converter_velocidade"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_velocidade"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_velocidade" />
+
+    <TextView
+        android:id="@+id/text_view_result_quilogramas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="30dp"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_titulo_app"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_titulo_app" />
+
+    <TextView
+        android:id="@+id/text_view_result_metragem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_text_metros"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_result_quilogramas"
+        app:layout_constraintStart_toStartOf="@+id/text_view_result_quilogramas" />
+
+    <TextView
+        android:id="@+id/text_view_result_quilometragem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_result_metragem"
+        app:layout_constraintStart_toStartOf="@+id/text_view_result_metragem"
+        app:layout_constraintTop_toTopOf="@+id/edit_text_quilometros" />
+
+    <TextView
+        android:id="@+id/text_view_result_velocidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_result_quilometragem"
+        app:layout_constraintStart_toStartOf="@+id/text_view_result_quilometragem"
+        app:layout_constraintTop_toTopOf="@+id/edit_text_velocidade" />
+
+    <TextView
+        android:id="@+id/text_view_libras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/text_view_libras"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/text_view_result_quilogramas"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_result_quilogramas" />
+
+    <TextView
+        android:id="@+id/text_view_pes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_view_pes"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/text_view_result_metragem"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_result_metragem" />
+
+    <TextView
+        android:id="@+id/text_view_milhas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/text_view_milhas"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/text_view_result_quilometragem"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_result_quilometragem" />
+
+    <TextView
+        android:id="@+id/text_view_velocidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/text_view_mph"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/text_view_result_velocidade"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_result_velocidade" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

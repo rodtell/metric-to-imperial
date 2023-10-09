@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Metric to Imperial</string>
+    <string name="digite_os_quilogramas">Digite os quilogramas</string>
+    <string name="conversor_metrico_para_imperial">Conversor métrico para imperial</string>
+    <string name="digite_a_metragem">Digite a metragem</string>
+    <string name="converter">Converter</string>
+    <string name="converter_metros">Converter</string>
+    <string name="digite_a_quilometragem">Digite a quilometragem</string>
+    <string name="converter_quilometragem">Converter</string>
+    <string name="digite_a_velocidade_km_h">Digite a velocidade (Km/h)</string>
+    <string name="converter_velocidade">Converter</string>
+    <string name="text_view_libras">Libras</string>
+    <string name="text_view_pes">Pés</string>
+    <string name="text_view_milhas">Milhas</string>
+    <string name="text_view_mph">Mph</string>
+</resources>
